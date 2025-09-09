@@ -1,63 +1,81 @@
-📊 Project Overview
+
+# 📊 CRM Sales Opportunities
 
 This project analyzes a simulated CRM (Customer Relationship Management) dataset to uncover insights into sales team performance, agent effectiveness, quarterly sales trends, and product win rates.
 
 The goal is to demonstrate end-to-end data analysis skills, from raw data ingestion and SQL-based data modeling to final business insights and visualizations.
 
-🗂️ Datasets
+<br>
+
+## 🗂️ Datasets
 
 The project uses four core datasets:
 
-Dataset	Description
+| Dataset              | Description                                                         |
+|----------------------|---------------------------------------------------------------------|
+| accounts.csv         | Contains information about client accounts.                         |
+| products.csv         | List of products being sold, including categories and pricing.      |
+| sales_pipeline.csv   | Tracks individual sales opportunities, their status, value, and related sales agent. |
+| sales_teams.csv      | Details of sales teams and the agents assigned to them.             |
 
-accounts.csv	Contains information about client accounts.
+<br>
 
-products.csv	List of products being sold, including categories and pricing.
-
-sales_pipeline.csv	Tracks individual sales opportunities, their status, value, and related sales agent.
-
-sales_teams.csv	Details of sales teams and the agents assigned to them.
-
-
-🔍 Key Business Questions
+## 🔍 Key Business Questions
 
 The analysis answers the following:
 
-How is each sales team performing compared to the rest?
+- How is each sales team performing compared to the rest?
+- Are any sales agents lagging behind?
+- Are there any quarter-over-quarter trends?
+- Do any products have better win rates?
 
-Are any sales agents lagging behind?
+<br>
 
-Are there any quarter-over-quarter trends?
+## 📓 Notebooks
 
-Do any products have better win rates?
-
-📓 Notebooks
-Notebook	Description
-01_create_sql_tables.ipynb	Uploads .csv files into SQL tables using SQLite. Sets up the database schema for analysis.
-02_crm_sales_analysis.ipynb	Performs analysis using SQL queries and visualizations. Contains the final queries used to derive insights.
+| Notebook                   | Description                                                                              |
+|----------------------------|------------------------------------------------------------------------------------------|
+| 01_create_sql_tables.ipynb | Uploads .csv files into SQL tables using SQLite. Sets up the database schema for analysis.|
+| 02_crm_sales_analysis.ipynb| Performs analysis using SQL queries and visualizations. Contains the final queries used to derive insights.|
 
 These notebooks are meant to be run in order, with the first one setting up the database and the second one doing the heavy analysis.
 
-🧰 How to Use
+<br>
 
-Clone this repository:
+## 📈 Insights & Visualizations
 
+The analysis includes:
+
+- Summary statistics and visualizations
+- Team and agent-level performance comparisons
+- Quarterly trends and product win rates
+- SQL queries and corresponding Python visualizations (via Pandas/Seaborn)
+
+<br>
+
+## 🧰 How to Use
+
+**Clone this repository:**
+```bash
 git clone https://github.com/yourusername/crm-sales-opportunities.git
 cd crm-sales-opportunities
+```
 
-
-Install dependencies:
-
+**Install dependencies:**
+```bash
 pip install -r requirements.txt
+```
 
-
-Run the notebooks in order:
-
+**Run the notebooks in order:**
+```
 notebooks/01_create_sql_tables.ipynb
-
 notebooks/02_crm_sales_analysis.ipynb
+```
 
-📁 Project Structure
+<br>
+
+## 📁 Project Structure
+```
 crm-sales-opportunities/
 │
 ├── data/
@@ -72,20 +90,12 @@ crm-sales-opportunities/
 │
 ├── README.md
 
-📌 Key Skills Demonstrated
+```
 
-Exploratory Data Analysis (EDA)
+<br>
 
-Business Insight Generation
+## 🚀 Future Improvements
 
-Sales Funnel & Pipeline Metrics
-
-Team & Product Performance Benchmarking
-
-🚀 Future Improvements
-
-Add an interactive dashboard (e.g., Power BI, Tableau, or Plotly Dash)
-
-Include predictive modeling (e.g., close probability prediction)
-
-Automate data refresh and reporting with scripts or scheduled pipelines
+- Add an interactive dashboard (e.g., Power BI, Tableau, or Plotly Dash)
+- Include predictive modeling (e.g., close probability prediction)
+- Automate data refresh and reporting with scripts or scheduled pipelines
